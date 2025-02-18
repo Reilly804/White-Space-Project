@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Effect</title>
+    <link rel="stylesheet" href="https://use.typekit.net/ybw8twt.css">
+    <style>
+        body {
+            display: flex;
+            font-family: "neue-haas-unica", Arial, sans-serif;
+            font-size: 15px;
+            letter-spacing: -1px;
+            line-height: 75%;
+
+        }
+        .container {
+            display:inline-block;
+            width: 100%;
+            transition: all 1s ease-in-out;
+        }
+        .passage {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            cursor: pointer;
+            transition: all 1s ease-in-out;
+            position:flex;
+        }
+        .text, .whitespace {
+            transition: transform 1s ease-in-out, text-align 1s ease-in-out, margin-right 1s ease-in-out, letter-spacing 1s ease-in-out, line-height 1s ease-in-out, color 1s ease-in-out;
+        }
+        .whitespace {
+            color: rgb(0, 0, 0);
+            white-space: wrap;
+            text-shadow: 2px,1px;
+        }
+        .passage:hover {
+            width: 100%;
+            justify-content: space-between;
+        }
+        .passage:hover .text {
+            transform: translateX(50%);
+            size: 12px;
+
+        }
+        .passage:hover .whitespace {
+            transform: translateX(-100%);
+
+        }
+
+        h1{
+            font-size: 100px;
+            line-height: 105px;
+            letter-spacing: 2px;
+        }
+
+        button{
+        margin-top: 5%;
+        align-items: center;
+        position:relative;
+
+        }
+
+        .body{
+            position:absolute;
+        }
+
+        .passage_top {
+            display: flex;
+            flex-wrap: wrap;
+            cursor: pointer;
+            transition: all 1s ease-in-out;
+            position:flex;
+            margin-top: 10%;
+            margin-right: 50%;
+            margin-left: 10vw;
+        }
+        .passage_top:hover .whitespace {
+            text-align: left;
+            margin-right: 55%;
+            line-height: 100%;
+            transition: all 1s ease-in-out;
+        }
+
+        .passage_top:hover .text {
+            transform: translateX(70%);
+            size: 12px;
+            margin-top: 1%;
+            color: rgb(255, 255, 255);
+
+
+        }
+        .passage_right {
+            display: flex;
+            flex-wrap: wrap;
+            cursor: pointer;
+            transition: all 1s ease-in-out;
+            position:flex;
+            margin-left: 50%;
+            margin-right:10vw
+            
+        }
+
+
+        .passage_right:hover .text {
+            transform: translateX(-50%);
+            margin-top: 1%;
+            color: rgb(255, 255, 255);
+
+        }
+        .passage_right:hover .whitespace {
+            text-align: left;
+            margin-left: 55%;
+            line-height: 90%;
+            transition: all 1s ease-in-out;
+
+        }
+
+        .passage_middle_left {
+            display: flex;
+            flex-wrap: wrap;
+            cursor: pointer;
+            transition: all 1s ease-in-out;
+            position:flex;
+            margin-left: 50%;
+            margin-right:10vw;
+        }
+
+
+        .passage_middle_left:hover .text {
+            transform: translateX(-50%);
+            margin-top: 1%;
+            text-align: left;
+            color: rgb(255, 255, 255);
+            transition: all 1s ease-in-out;
+        }
+        .passage_middle_left:hover .whitespace {
+            text-align: left;
+            margin-right: 70%;
+            line-height: 90%;
+            transition: all 1s ease-in-out;
+
+        }
+        .passage_middle_right {
+            display: flex;
+            flex-wrap: wrap;
+            cursor: pointer;
+            transition: all 1s ease-in-out;
+            position:flex;
+            margin-right: 50%;
+            margin-left: 10vw;
+        }
+
+
+        .passage_middle_right:hover .text {
+            transform: translateX(-50%);
+            margin-top: 1%;
+            text-align: left;
+            color: rgb(255, 255, 255);
+            transition: all 1s ease-in-out;
+        
+
+        }
+        .passage_middle_right:hover .whitespace {
+            text-align: left;
+            margin-left: 70%;
+            line-height: 90%;
+            transition: all 1s ease-in-out;
+
+        }
+
+        
+    </style>
+</head>
+<body>        
+    <h1 class="body">White Space ///</h1>
+    <div class="container">
+
+        <div class="passage_top">
+            <span class="text">                iculus. Quis metus egestas taciti maximus fringilla. Sceler
+                isque nisl fermentum egestas nam vivamus a semper orci?
+                Fringilla sollicitudin metus etiam vel lacinia in efficitur
+                 ligula nam. Semper molestie odio taciti tortor nulla maece
+                 nas. Sem eu fames netus; lacus potenti conubia. Avolutpat 
+                 magnis diam proin neque nostra tempor. Id ornare dapibus 
+                 conubia rutrum metus velit condimen                iculus. Quis metus egestas taciti maximus fringilla. Sceler
+                 isque nisl fermentum egestas nam vivamus a semper orci?
+                 Fringilla sollicitudin metus etiam vel lacinia in efficitur
+                  ligula nam. Semper molestie odio taciti tortor nulla maece
+                  nas. Sem eu fames netus; lacus potenti conubia. Avolutpat 
+                  magnis diam proin neque nostra tempor. Id ornare dapibus 
+                  conubia rutrum metus velit condimentum etiam. Semper condi
+                  mentum iaculis nullam enim arcuauctor lectus eu. Adipiscing                iculus. Quis metus egestas taciti maximus fringilla. Sceler
+                  isque nisl fermentum egestas nam vivamus a semper orci?
+                  Fringilla sollicitudin metus etiam vel lacinia in efficitur
+                   ligula nam. Semper molestie odio taciti tortor nulla maece
+                   nas. Sem eu fames netus; lacus potenti conubia. Avolutpat 
+                   magnis diam proin neque nostra tempor. Id ornare dapibus 
+                   conubia rutrum metus velit condimentum etiam. Semper condi
+                   mentum iaculis nullam enim arcuauctor lectus eu. Adipiscingtum etiam. Semper condi
+                 mentum iaculis nullam enim arcuauctor lectus eu. Adipiscing                iculus. Quis metus egestas taciti maximus fringilla. Sceler
+                 isque nisl fermentum egestas nam vivamus a semper orci?
+                 Fringilla sollicitudin metus etiam vel lacinia in efficitur
+                  ligula nam. Semper molestie odio taciti tortor nulla maece
+                  nas. Sem eu fames netus; lacus potenti conubia. Avolutpat 
+                  magnis diam proin neque nostra tempor. Id ornare dapibus 
+                  conubia rutrum metus velit condimentum etiam. Semper condi
+                  mentum iaculis nullam enim arcuauctor lectus eu. AdipiscingPellentesque tellus proin pulvinar cursus euismod. Ligula tempor a suspendisse maecenas; mattis leo mus. Suscipit aliquam imperdiet fames atfusce fringilla eleifend. Elit sapien sapien; id curabitur finibus cubilia dui. Elementum proin finibus maximus sem nisi </span>
+            <span class="whitespace">As we saw, micro white space is essential for making interface content legible. As a designer, you should consider white space when choosing the design typography specifications, such as font, size, color, style, leading, kerning, and tracking. Remember the image from the previous page? Changing the white space layout affects reading performance and overall user experience. Happy readers are far more likely to stay on your page.</span>
+            <span class="text"> maecenas primis a. Est facilisi integer per sit gravida rid
+                iculus. Quis metus egestas taciti maximus fringilla. Sceler
+                isque nisl fermentum egestas na                iculus. Quis metus egestas taciti maximus fringilla. Sceler
+                isque nisl fermentum egestas nam vivamus a semper orci?
+                Fringilla sollicitudin metus etiam vel lacinia in efficitur
+                 ligula nam. Semper molestie odio taciti tortor nulla maece
+                 nas. Sem eu fames netus; lacus potenti conubia. Avolutpat 
+                 magnis diam proin neque nostra tempor. Id ornare dapibus 
+                 conubia rutrum metus velit condimentum etiam. Semper condi
+                 mentum iaculis nullam enim arcuauctor lectus eu. Adipiscingm vivamus a semper orci?
+                Fringilla sollicitudin metus etiam vel lacinia in efficitur
+                 ligula nam. Semper molestie odio taciti tortor nulla maece
+                 nas. Sem eu fames netus; lacus potenti conubia. Avolutpat 
+                 magnis diam proin neque nostra tempor. Id ornare dapibus 
+                 conubia rutrum metus velit condimentum etiam. Semper condi
+                 mentum iaculis nullam enim arcuauctor lectus eu. Adipiscing
+            </div>
+            <div class="container">
+                <div class="passage_right">
+                    <span class="text">Pellentesque tellus proin p                iculus. Quis metus egestas taciti maximus fringilla. Sceler
+                        isque nisl fermentum egestas nam vivamus a semper orci?
+                        Fringilla sollicitudin metus etiam vel lacinia in efficitur
+                         ligula nam. Semper molestie odio taciti tortor nulla maece
+                         nas. Sem eu fames netus; lacus potenti conubia. Avolutpat 
+                         magnis diam proin neque nostra tempor. Id ornare dapibus 
+                         conubia rutrum metus velit condimentum etiam. Semper condi
+                         mentum iaculis nullam enim arcuauctor lectus eu. Adipiscingulvinar cursus euismod. Ligula tempor a suspendisse maecenas; mattis leo mus. Suscipit aliquam imperdiet fames atfusce fringilla eleifend. Elit sapien sapien; id curabitur finibus cubilia dui. Elementum proin finibus maximus sem nisi </span>
+                         <span class="whitespace">White space can help guide the user through interactive content. It may help to build focal points and direct the user’s attention to specific layout parts.
+
+                            Part of the strategic planning for a website is giving priority to specific elements or content. You can use many visual methods to spotlight specific elements; one is to play with the amounts of white space around these focal points. The branding and print industries apply this theory to draw attention to brand messages.
+
+                            Note: these indications aren’t “set in stone”. It’s always best to test the use of white space on your users. Only they can tell you how they perceive your designs.</span>
+                         <span class="text"> maecenas primis a. Est facilisi integer per sit gravida rid
+                        iculus. Quis metus egestas taciti maximus fringilla. Sceler
+                        isque nisl fermentum egestas nam vivamus a semper orci?
+                        Fringilla sollicitudin metus etiam vel lacinia in efficitur
+                         ligula nam. Semper molestie odio taciti tortor nulla maece
+                         nas. Sem eu fames netus; lacus potenti conubia. Avolutpat 
+                         magnis diam proin neque nostra tempor. Id ornare dapibus 
+                         conubia rutrum metus velit condimentum etiam. Semper condi
+                         mentum iaculis nullam enim arcuauctor lectus eu. Adipi                iculus. Quis metus egestas taciti maximus fringilla. Sceler
+                         isque nisl fermentum egestas nam vivamus a semper orci?
+                         Fringilla sollicitudin metus etiam vel lacinia in efficitur
+                          ligula nam. Semper molestie odio taciti tortor nulla maece
+                          nas. Sem eu fames netus; lacus potenti conubia. Avolutpat 
+                          magnis diam proin neque nostra tempor. Id ornare dapibus 
+                          conubia rutrum metus velit condimentum etiam. Semper condi                          enim arcuauctor lectus eu. Adipiscing                iculus. Quis metus egestas taciti maximus fringilla. Sceler
+                          isque nisl fermentum egestas nam vivamus a semper orci?
+                          Fringilla sollicitudin metus etiam vel lacinia in efficitur
+                           ligula nam. Semper molestie odio taciti tortor nulla maece
+                           nas. Sem eu fames netus; lacus potenti conubia. Avolutpat 
+                           magnis diam proin neque nostra tempor. Id ornare dapibus 
+                           conubia rutrum metus velit condimentum etiam. Semper condi
+                           mentum iaculis nullam enim arcuauctor lectus eu. Adipiscing                iculus. Quis metus egestas taciti maximus fringilla. Sceler
+                           isque nisl fermentum egestas nam vivamus a semper orci?
+                           Fringilla sollicitudin metus etiam vel lacinia in efficitur
+                            ligula nam. Semper molestie odio taciti tortor nulla maece
+                            nas. Sem eu fames netus; lacus potenti conubia. Avolutpat 
+                            magnis diam proin neque nostra tempor. Id ornare dapibus 
+                            conubia rutrum metus velit condimentum etiam. Semper condi
+                            mentum iaculis nullam enim arcuauctor lectus eu. Adipiscingscing
+                        </span>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="passage_middle_right">
+                        <span class="text">Pellentesque tellus proin p                iculus. Quis metus egestas taciti maximus fringilla. Sceler
+                            isque nisl fermentum egestas nam vivamus a semper orci?
+                            Fringilla sollicitudin metus etiam vel lacinia in efficitur
+                             ligula nam. Semper molestie odio taciti tortor nulla maece
+                             nas. Sem eu fames netus; lacus potenti conubia. Avolutpat 
+                             magnis diam proin neque nostra tempor. Id ornare dapibus 
+                             conubia rutrum metus velit condimentum etiam. Semper condi
+                             mentum iaculis nullam enim arcuauctor lectus eu. Adipiscin
+                             gulvinar cursus euismod. Ligula tempor a suspendisse maecen
+                             as; mattis leo mus. Suscipit aliquam imperdiet fames atfusc
+                             e fringilla eleifend. Elit sapien sapien; id curabitur finib
+                             us cubilia dui. Elementum proin finibus maximus sem nisi </span>
+                             <span class="whitespace">White space is commonly categorized based on the density of micro white space and its relationship to macro white space. We’re talking about ratios and proportions.</span>
+                             <span class="text"> maecenas primis a. Est facilisi integer p
+                                er sit gravida rid
+                            iculus. Quis metus egestas taciti maximus fringilla. Sceler
+                            isque nisl fermentum egestas nam vivamus a semper orci?
+                            Fringilla sollicitudin metus etiam vel lacinia in efficitur
+                             ligula nam. Semper molestie odio taciti tortor nulla maece
+                             nas. Sem eu fames netus; lacus potenti conubia. Avolutpat 
+                             magnis diam proin neque nostra tempor. Id ornare dapibus 
+                             conubia rutrum metus velit condimentum etiam. Semper condi
+                             mentum iaculis nullam enim arcuauctor lectus eu. Adipi     
+                             iculus. Quis metus egestas taciti maximus fringi
+                            lla. Sceler </span>
+                        </div>
+
+         <div class="container">
+        <div class="passage_middle_left">
+        <span class="text">Pellentesque tellus proin p                iculus. Quis metus egestas taciti maximus fringilla. Sceler
+                                        isque nisl fermentum egestas nam vivamus a semper orci?
+                                        Fringilla sollicitudin metus etiam vel lacinia in efficitur
+                                         ligula nam. Semper molestie odio taciti tortor nulla maece
+                                         nas. Sem eu fames netus; lacus potenti conubia. Avolutpat 
+                                         magnis diam proin neque nostra tempor. Id ornare dapibus 
+                                         conubia rutrum metus velit condimentum etiam. Semper condi
+                                         mentum iaculis nullam enim arcuauctor lectus eu. Adipiscin
+                                         gulvinar cursus euismod. Ligula tempor a suspendisse maecen
+                                         as; mattis leo mus. Suscipit aliquam imperdiet fames atfusc
+                                         e fringilla eleifend. Elit sapien sapien; id curabitur finib
+                                         us cubilia dui. Elementum proin finibus maximus sem nisi </span>
+                                         <span class="whitespace">White space (negative space) is the area between design elements. It's another tool for designers to design for the user experience (UX). Remember that white space is not necessarily white; it’s just the name to indicate spaces where there are neither user interface (UI) elements nor specific content.</span>
+                                         <span class="text"> maecenas primis a. Est facilisi integer p
+                                            er sit gravida rid
+                                        iculus. Quis metus egestas taciti maximus fringilla. Sceler
+                                        isque nisl fermentum egestas nam vivamus a semper orci?
+                                        Fringilla sollicitudin metus etiam vel lacinia in efficitur
+                                         ligula nam. Semper molestie odio taciti tortor nulla maece
+                                         nas. Sem eu fames netus; lacus potenti conubia. Avolutpat 
+                                         magnis diam proin neque nostra tempor. Id ornare dapibus 
+                                         conubia rutrum metus velit condimentum etiam. Semper condi
+                                         mentum iaculis nullam enim arcuauctor lectus eu. Adipi     
+                                         iculus. Quis metus egestas taciti maximus fringi
+                                        lla. Sceler </span>
+                        </div>
+    </div>
+    <a href=white_space_page2.html> <button >[page 2</button></a>
+</html>
+
+
